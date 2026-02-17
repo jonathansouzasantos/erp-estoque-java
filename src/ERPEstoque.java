@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class ERPEstoque {
 
-    // Classe interna para representar o Produto (Entidade do seu Banco de Dados no futuro)
+    // Classe interna para representar o Produto (Entidade do meu Banco de Dados no futuro)
     static class Produto {
         String nome;
         int quantidade;
@@ -27,13 +27,13 @@ public class ERPEstoque {
     }
 
     public static void main(String[] args) {
-        // Lista dinâmica para armazenar os produtos (simulando um Banco de Dados Oracle)
+        // Lista dinâmica para armazenar os produtos (simulando meu futuro Banco de Dados Oracle)
         ArrayList<Produto> estoque = new ArrayList<>();
         Scanner leitor = new Scanner(System.in);
         int opcao = -1;
 
         System.out.println("=== SISTEMA ERP STOCKMASTER - INICIALIZANDO ===");
-        // Nota: O Maven 3.9.12 que você configurou gerencia as dependências deste projeto.
+        // Nota: O Maven 3.9.12 configurado gerencia as dependências deste projeto.
 
         while (opcao != 0) {
             System.out.println("\n--- MENU PRINCIPAL ---");
@@ -61,7 +61,7 @@ public class ERPEstoque {
 
                 case 2:
                     System.out.println("\n--- RELATÓRIO DE ESTOQUE ATUAL ---");
-                    // O uso de Streams (Java 8+) tornaria isso mais "limpo", você verá isso na DIO.
+                    // O uso de Streams (Java 8+) tornaria isso mais "limpo".
                     if (estoque.isEmpty()) {
                         System.out.println("Estoque vazio.");
                     } else {
